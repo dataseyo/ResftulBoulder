@@ -18,7 +18,7 @@ export const getBoulderList = (req, res, next) => {
 }
 
 export const viewBoulder = (req, res) => {
- // 
+
 }
 
 export const createBoulder = async (req, res) => {

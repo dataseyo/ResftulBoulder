@@ -6,7 +6,7 @@ import dotenv from 'dotenv'
 dotenv.config()
 
 const app = express() // initialize app
-const PORT = 8000 || process.env.PORT
+const PORT = 8200 || process.env.PORT
 
 app.listen(PORT, () => {
     console.log(`RestfulBoulder API running on ${PORT}` )
@@ -22,8 +22,8 @@ mongoose.connect(process.env.CONNECTION_URL, { useNewUrlParser: true})
 const db = mongoose.connection
 db.once('open', () => console.log('Connection Successful'))
 
-
-
 // API endpoints
 import BoulderRoutes from './routes/BoulderRoutes.js'
 app.use('/boulders', BoulderRoutes)
+
+app.get('/', (req, res) => res.send('hey'))

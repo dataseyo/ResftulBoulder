@@ -1,0 +1,1 @@
+Stack: MERN (MongoDB, Express, React, Node) with python for test data generation. 
